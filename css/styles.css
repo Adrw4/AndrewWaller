@@ -16,11 +16,9 @@ html {
     background-image: url("../img/circuit-board.webp");
     margin: 0px;
     padding: 0px;
-    content: '';
     background-color: #282828;
     background-blend-mode: multiply;
 }
-
 
 .text-box {
 	text-align: center;
@@ -32,14 +30,59 @@ html {
     text-align: center;
     background-color: black;
     margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 hr {
-	border-top: 5px solid lime;
     width: 300px;
 }
 
+.fa {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*==============================================================================evrythang==*/
+
+.awesome {
+	-webkit-animation:colorchange 20s infinite alternate;
+	-moz-animation:colorchange 20s infinite alternate;
+	background-color: black;
+}
+
+@-webkit-keyframes colorchange {
+	0% {color: blue;}
+	10% {color: #8e44ad;}
+	20% {color: #1abc9c;}
+	30% {color: #d35400;}
+	40% {color: blue;}
+	50% {color: #34495e;}
+	60% {color: blue;}
+	70% {color: #2980b9;}
+	80% {color: #f1c40f;}
+	90% {color: #2980b9;}
+	100% {color: pink;}
+}
+
+@-moz-keyframes colorchange {
+	0% {color: blue;}
+	10% {color: #8e44ad;}
+	20% {color: #1abc9c;}
+	30% {color: #d35400;}
+	40% {color: blue;}
+	50% {color: #34495e;}
+	60% {color: blue;}
+	70% {color: #2980b9;}
+	80% {color: #f1c40f;}
+	90% {color: #2980b9;}
+	100% {color: pink;}
+}
+
+/*==============================================================================RGB==*/
 
 .hero {
 	height: 85%;
@@ -53,8 +96,11 @@ hr {
 
 /*==============================================================================hero section==*/
 
-.external-sites {
+.futer {
 	height: 25%;
+}
+
+.external-sites {
 	overflow: auto;
 }
 
@@ -69,13 +115,14 @@ hr {
 	display: flex;
 	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .flex-child {
 	text-align: center;
 	width: 100vw;
 	padding: 2px;
+	height: 14vh;
 }
 .child-1 {
 	order: 1;
@@ -95,14 +142,20 @@ hr {
 
 /*==============================================================================external sites==*/
 
-@media only screen and (min-width: 830px) {
-    body {
-        overflow: hidden;
-    }
-    
+@media only screen and (min-width: 765px) {
     .flex-child {
-    	width: 400px;
+    	width: 50%;
     }
+}
+
+@media only screen and (min-width: 1200px) {
+	body {
+    	overflow: hidden;
+    }
+	
+	.flex-child {
+		width: 25%;
+	}
 }
 
 /*==============================================================================media queries==*/
