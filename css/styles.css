@@ -16,8 +16,6 @@ html {
     background-image: url("../img/circuit-board.webp");
     margin: 0px;
     padding: 0px;
-    background-color: #282828;
-    background-blend-mode: multiply;
 }
 
 .text-box {
@@ -36,14 +34,14 @@ html {
     align-items: center;
 }
 
-hr {
-    width: 300px;
-}
-
 .fa {
 	display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btn-black {
+	background-color: black;
 }
 
 /*==============================================================================evrythang==*/
@@ -51,7 +49,6 @@ hr {
 .awesome {
 	-webkit-animation:colorchange 20s infinite alternate;
 	-moz-animation:colorchange 20s infinite alternate;
-	background-color: black;
 }
 
 @-webkit-keyframes colorchange {
@@ -68,7 +65,7 @@ hr {
 	100% {color: pink;}
 }
 
-@-moz-keyframes colorchange {
+@keyframes colorchange {
 	0% {color: blue;}
 	10% {color: #8e44ad;}
 	20% {color: #1abc9c;}
@@ -92,6 +89,26 @@ hr {
 	margin-top: 0;
 	padding-top: 10%;
 	color: white;
+}
+
+.top-pushdown {
+	padding-top: 50px;
+}
+
+.name {
+	margin-bottom: 0px;
+}
+
+.underline {
+	width: 100%;
+	margin:0 auto;
+	font-size: 20px;
+	-webkit-animation:colorchange 20s infinite alternate;
+}
+
+.bio {
+	font-size: 30px;
+	padding-top: 50px;
 }
 
 /*==============================================================================hero section==*/
@@ -155,6 +172,10 @@ hr {
 	
 	.flex-child {
 		width: 25%;
+	}
+	
+	.top-pushdown {
+		padding-top: 200px;
 	}
 }
 
