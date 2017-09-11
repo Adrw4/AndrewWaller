@@ -110,9 +110,11 @@ html {
 }
 
 .underline {
-	width: 100%;
+	width: fit-content;
 	margin:0 auto;
 	font-size: 20px;
+	text-align: center;
+	background-color: black;
 	-webkit-animation:colorchange 20s infinite alternate;
 }
 
@@ -178,6 +180,11 @@ html {
 
 .modal-footer {
   background-color: rgba(210,210,155, .65);
+}
+
+.contact-text {
+	display: flex;
+	flex-direction: column;
 }
 
 /*==============================================================================contact page==*/
