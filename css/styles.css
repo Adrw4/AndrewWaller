@@ -42,12 +42,17 @@ html {
 
 /*==============================================================================evrythang==*/
 
-.awesome {
+.awesome-text {
+	-webkit-animation:text-colorchange 20s infinite alternate;
+	-moz-animation:text-colorchange 20s infinite alternate;
+}
+
+.awesome-background {
 	-webkit-animation:colorchange 20s infinite alternate;
 	-moz-animation:colorchange 20s infinite alternate;
 }
 
-@-webkit-keyframes colorchange {
+@-webkit-keyframes text-colorchange {
 	0% {color: blue;}
 	10% {color: #8e44ad;}
 	20% {color: #1abc9c;}
@@ -61,7 +66,7 @@ html {
 	100% {color: pink;}
 }
 
-@keyframes colorchange {
+@keyframes text-colorchange {
 	0% {color: blue;}
 	10% {color: #8e44ad;}
 	20% {color: #1abc9c;}
@@ -73,12 +78,42 @@ html {
 	80% {color: #f1c40f;}
 	90% {color: #2980b9;}
 	100% {color: pink;}
+}
+
+@-webkit-keyframes colorchange {
+	0% {background-color: blue;}
+	10% {background-color: #8e44ad;}
+	20% {background-color: #1abc9c;}
+	30% {background-color: #d35400;}
+	40% {background-color: blue;}
+	50% {background-color: #34495e;}
+	60% {background-color: blue;}
+	70% {background-color: #2980b9;}
+	80% {background-color: #f1c40f;}
+	90% {background-color: #2980b9;}
+	100% {background-color: pink;}
+}
+
+@keyframes colorchange {
+	0% {background-color: blue;}
+	10% {background-color: #8e44ad;}
+	20% {background-color: #1abc9c;}
+	30% {background-color: #d35400;}
+	40% {background-color: blue;}
+	50% {background-color: #34495e;}
+	60% {background-color: blue;}
+	70% {background-color: #2980b9;}
+	80% {background-color: #f1c40f;}
+	90% {background-color: #2980b9;}
+	100% {background-color: pink;}
 }
 
 /*==============================================================================RGB==*/
 
 .btn-black {
 	background-color: black;
+	margin-top: 50px;
+	margin-bottom: 30px;
 }
 
 .btn-home {
@@ -110,8 +145,11 @@ html {
 }
 
 .underline {
-	width: fit-content;
+	height: 10px;
+	width: 300px;
+	border: 1px solid black;
 	margin:0 auto;
+	margin-top: 10px;
 	font-size: 20px;
 	text-align: center;
 	background-color: black;
@@ -185,6 +223,13 @@ html {
 .contact-text {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.profile-picture {
+	height: auto;
+	max-width: 100%;
 }
 
 /*==============================================================================contact page==*/
@@ -214,6 +259,9 @@ html {
 		width: 25%;
 	}
 
+	.picture-box {
+		height: 100%;
+	}
 
 }
 
