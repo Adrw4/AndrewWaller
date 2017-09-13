@@ -59,7 +59,7 @@ html {
 }
 
 @-webkit-keyframes text-colorchange {
-	0% {color: blue;}
+	0% {color: #0074D9;}
 	10% {color: #8e44ad;}
 	20% {color: #1abc9c;}
 	30% {color: #d35400;}
@@ -118,16 +118,18 @@ html {
 
 .btn-black {
 	background-color: black;
-	margin-top: 50px;
-	margin-bottom: 30px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	width: fit-content;
+	margin: auto;
 }
 
 .btn-home {
-	height: 80px;
-	width: 145px;
-	background-color: black;
-	font-size: 50px;
-	padding: 4px;
+    height: 40px;
+    width: 75px;
+    background-color: black;
+    font-size: 25px;
+    padding: 4px;
 }
 
 /*==============================================================================.btn's==*/
@@ -258,21 +260,21 @@ html {
 	.top-pushdown {
 		padding-top: 150px;
 	}
-	
-	.profile-picture {
-		width: auto;
-		height: 100vh;
-		margin: 5px 15% 0px 15%;
-	}
 }
 
 @media only screen and (min-width: 1025px) {
-	body {
-		overflow: hidden;
+	.btn-home {
+    	height: 80px;
+    	width: 140px;
+    	font-size: 50px;
 	}
 }
 
 @media only screen and (min-width: 1200px) {
+	body {
+		overflow: hidden;
+	}
+	
 	.flex-child {
 		width: 25%;
 	}
@@ -284,7 +286,22 @@ html {
 	.profile-picture {
 		float: right;
 	}
-
+	
+	.btn-big {
+	    margin-top: 200px;
+	    margin-bottom: 40px;
+	    font-size: 100px;
+	}
+	
+	.name {
+		margin-top: 200px;
+	}
+	
+	.profile-picture {
+		width: auto;
+		height: 100vh;
+		margin: 5px 15% 0px 15%;
+	}
 }
 
 /*==============================================================================media queries==*/
