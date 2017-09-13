@@ -248,6 +248,12 @@ html {
 	border: 30px solid rgba(255,250,240, 1);
 }
 
+.bio-2 {
+    margin: 20px 0px 20px 0px;
+    font-size: 30px;
+    color: white;
+}
+
 /*==============================================================================contact page==*/
 
 @media only screen and (min-width: 765px) {
@@ -294,7 +300,7 @@ html {
 	.btn-big {
 	    margin-top: 200px;
 	    margin-bottom: 40px;
-	    font-size: 100px;
+	    font-size: 80px;
 	}
 	
 	.name {
@@ -304,8 +310,27 @@ html {
 	.profile-picture {
 		width: auto;
 		height: 100vh;
-		margin: 5px 15% 0px 15%;
+		
+	}
+	
+	.contact-image {
+		display: flex;
+	}
+	
+	.bio-2 {
+	    margin: 400px 0px 20px 0px;
+	    font-size: 30px;
+	    color: white;
+	    align-items: center;
+	    display: flex;
+	    flex-direction: column;
+	    flex-wrap: wrap;
 	}
 }
 
+@media only screen and (min-width: 1500px) {
+	.btn-big {
+		font-size: 100px;
+	}
+}
 /*==============================================================================media queries==*/
