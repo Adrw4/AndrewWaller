@@ -17,7 +17,7 @@ html {
 	background-size: cover;
 	min-height: 100%;
 	min-width: 100%;
-	background-image:  url("../img/surf.jpeg");
+	background-image:  url("../img/surf.jpg");
 	margin: 0px;
 	padding: 0px;
 	overflow-x: hidden;
@@ -157,7 +157,7 @@ html {
 }
 
 .underline {
-	height: 10px;
+	height: 8px;
 	width: 300px;
 	border: 1px solid black;
 	margin:0 auto;
