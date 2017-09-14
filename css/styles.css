@@ -267,9 +267,7 @@ html {
 }
 
 @media only screen and (min-width: 992px) {
-	.top-pushdown {
-		padding-top: 150px;
-	}
+
 }
 
 @media only screen and (min-width: 1025px) {
@@ -284,7 +282,7 @@ html {
 	body {
 		overflow: hidden;
 	}
-	
+
 	.flex-child {
 		width: 25%;
 	}
@@ -296,27 +294,27 @@ html {
 	.profile-picture {
 		float: right;
 	}
-	
+
 	.btn-big {
 	    margin-top: 200px;
 	    margin-bottom: 40px;
 	    font-size: 80px;
 	}
-	
+
 	.name {
 		margin-top: 100px;
 	}
-	
+
 	.profile-picture {
 		width: auto;
 		height: 100vh;
-		
+
 	}
-	
+
 	.contact-image {
 		display: flex;
 	}
-	
+
 	.bio-2 {
 	    margin: 400px 0px 20px 0px;
 	    font-size: 30px;
@@ -325,6 +323,12 @@ html {
 	    display: flex;
 	    flex-direction: column;
 	    flex-wrap: wrap;
+	}
+}
+
+@media only screen and (min-width: 1367px) {
+	.top-pushdown {
+		padding-top: 150px;
 	}
 }
 
