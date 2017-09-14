@@ -48,7 +48,7 @@ html {
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	font-size: 50px;
+	font-size: 20px;
 }
 
 .box:hover .overlay{
@@ -353,6 +353,10 @@ html {
 	    display: flex;
 	    flex-direction: column;
 	    flex-wrap: wrap;
+	}
+	
+	.box-2 {
+		font-size: 50px;
 	}
 }
 
