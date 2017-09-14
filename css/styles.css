@@ -37,6 +37,23 @@ html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+}
+
+.box-2 {
+	text-align: center;
+	margin: auto;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	font-size: 50px;
+}
+
+.box:hover .overlay{
+	opacity: 1;
+	box-shadow: inset 0 0 0 10px black;
 }
 
 .row {
@@ -48,6 +65,19 @@ html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: midnightblue;
 }
 
 /*==============================================================================evrythang==*/
@@ -63,59 +93,59 @@ html {
 }
 
 @-webkit-keyframes text-colorchange {
-	0% {color: #0074D9;}
-	10% {color: #8e44ad;}
-	20% {color: #1abc9c;}
-	30% {color: #d35400;}
-	40% {color: blue;}
-	50% {color: #34495e;}
-	60% {color: blue;}
-	70% {color: #2980b9;}
-	80% {color: #f1c40f;}
-	90% {color: #2980b9;}
-	100% {color: pink;}
+	0% {color: rgb(255,187,120);}
+	10% {color: rgb(255,152,150);}
+	20% {color: rgb(197,176,213);}
+	30% {color: rgb(174,199,232);}
+	40% {color: rgb(152,223,138);}
+	50% {color: rgb(247,182,210);}
+	60% {color: rgb(219,219,141);}
+	70% {color: rgb(199,199,199);}
+	80% {color: rgb(196,156,148);}
+	90% {color: rgb(158,218,229);}
+	100% {color: rgb(247,182,210);}
 }
 
 @keyframes text-colorchange {
-	0% {color: blue;}
-	10% {color: #8e44ad;}
-	20% {color: #1abc9c;}
-	30% {color: #d35400;}
-	40% {color: blue;}
-	50% {color: #34495e;}
-	60% {color: blue;}
-	70% {color: #2980b9;}
-	80% {color: #f1c40f;}
-	90% {color: #2980b9;}
-	100% {color: pink;}
+	0% {color: rgb(255,187,120);}
+	10% {color: rgb(255,152,150);}
+	20% {color: rgb(197,176,213);}
+	30% {color: rgb(174,199,232);}
+	40% {color: rgb(152,223,138);}
+	50% {color: rgb(247,182,210);}
+	60% {color: rgb(219,219,141);}
+	70% {color: rgb(199,199,199);}
+	80% {color: rgb(196,156,148);}
+	90% {color: rgb(158,218,229);}
+	100% {color: rgb(247,182,210);}
 }
 
 @-webkit-keyframes colorchange {
-	0% {background-color: blue;}
-	10% {background-color: #8e44ad;}
-	20% {background-color: #1abc9c;}
-	30% {background-color: #d35400;}
-	40% {background-color: blue;}
-	50% {background-color: #34495e;}
-	60% {background-color: blue;}
-	70% {background-color: #2980b9;}
-	80% {background-color: #f1c40f;}
-	90% {background-color: #2980b9;}
-	100% {background-color: pink;}
+	0% {color: rgb(255,187,120);}
+	10% {color: rgb(255,152,150);}
+	20% {color: rgb(197,176,213);}
+	30% {color: rgb(174,199,232);}
+	40% {color: rgb(152,223,138);}
+	50% {color: rgb(247,182,210);}
+	60% {color: rgb(219,219,141);}
+	70% {color: rgb(199,199,199);}
+	80% {color: rgb(196,156,148);}
+	90% {color: rgb(158,218,229);}
+	100% {color: rgb(247,182,210);}
 }
 
 @keyframes colorchange {
-	0% {background-color: blue;}
-	10% {background-color: #8e44ad;}
-	20% {background-color: #1abc9c;}
-	30% {background-color: #d35400;}
-	40% {background-color: blue;}
-	50% {background-color: #34495e;}
-	60% {background-color: blue;}
-	70% {background-color: #2980b9;}
-	80% {background-color: #f1c40f;}
-	90% {background-color: #2980b9;}
-	100% {background-color: pink;}
+	0% {color: rgb(255,187,120);}
+	10% {color: rgb(255,152,150);}
+	20% {color: rgb(197,176,213);}
+	30% {color: rgb(174,199,232);}
+	40% {color: rgb(152,223,138);}
+	50% {color: rgb(247,182,210);}
+	60% {color: rgb(219,219,141);}
+	70% {color: rgb(199,199,199);}
+	80% {color: rgb(196,156,148);}
+	90% {color: rgb(158,218,229);}
+	100% {color: rgb(247,182,210);}
 }
 
 /*==============================================================================RGB==*/
