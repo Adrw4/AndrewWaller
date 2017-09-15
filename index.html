@@ -15,9 +15,10 @@
 	</head>
 <!------------------------------------------------------------------------------end of head-->
 	<body style="background-image:url(../img/surf.webp);">
-		<div class="container-fluid hero">
+		
+		<section class="home">
 			<div class="row">
-				<div class="col-lg-12 text-box top-pushdown">
+				<div class="col-lg-12 text-box first-sect">
 					<h1 class="text-box name">
 						Andrew Waller
 					</h1>
@@ -25,14 +26,31 @@
 					<p class="text-box bio">
 						Full time student, part time daydreamer, on my way to becoming a front end developer. Located in Fresno,CA.
 					</p>
-					<a href="contact.html">
-						<button type="button" class="btn btn-lg btn-black awesome-text">Talk to me</button>
+					<a href="#about">
+						<button type="button" class="btn btn-lg-bottom btn-black awesome-text">
+							<i class="fa fa-arrow-down fa-5x" aria-hidden="true"></i>
+						</button>
 					</a>
 				</div>
 			</div>
-		</div>
-<!------------------------------------------------------------------------------end of hero section-->
-	    <div class="futer">
+		</section>
+		<section class="about-me" id="about">
+			<div class="col-xs-12 col-lg-8 contact-image" style="padding-left:0px;padding-right:0px;">
+				<h1 class="text-box name-2">About Me</h1>
+				<div class="awesome-background underline"></div>
+				<ul class="bio-2">
+					<li>17 years old </li>
+					<li>Recent high school graduate</li>
+					<li>Currently enrolled at Geekwise Academy and Fresno city majoring in CIT</li>
+				</ul>
+				<img class="profile-picture" src="img/AndrewWaller.jpg" alt="Profile Picture">
+			</div>
+		</section>
+	    <section class="my-work">
+	    	<div>
+	    		<h1 class="text-box name-3">My Work</h1>
+	    		<div class="awesome-background underline"></div>
+	    	</div>
 			<div class="container-fluid external-sites">
 				<div class="flex-parent">
 					<div class="flex-child child-1">
@@ -56,11 +74,11 @@
 						</a>
 					</div>
 					<div class="flex-child child-3">
-						<a class="awesome-text" href="https://andrewwaller.github.io/Simple-Parallax-Scrolling/" alt="Parallax scrolling site" target="_blank" rel="noopener">
+						<a class="awesome-text" href="https://andrewwaller.github.io/number-guessing-name/" alt="Number Game">
 							<div class="box">
 								<i class="fa fa-cog fa-spin fa-5x"></i>
 								<div class="overlay">
-									<p class="text-box box-2">Parallax scrolling</p>
+									<p class="text-box box-2">Number Game</p>
 								</div>
 							</div>
 						</a>
@@ -68,7 +86,7 @@
 					<div class="flex-child child-4">
 						<a class="awesome-text" href="https://andrewwaller.github.io/Adrw4/" alt="My old portfolio site" target="_blank" rel="noopener">
 							<div class="box">
-								<i aria-hidden="true" class="fa fa-html5 fa-5x fa-center"></i>
+								<i aria-hidden="true" class="fa fa-html5 fa-5x"></i>
 								<div class="overlay">
 									<p class="text-box box-2">My old portfolio</p>
 								</div>
@@ -77,8 +95,26 @@
 					</div>
 				</div>
 			</div>
-		</div>
-<!------------------------------------------------------------------------------end of external sites-->
+		</section>
+		<section class="contact">
+			<div class="col-xs-12 col-lg-4 contact-text">
+				<h1 class="text-box name">
+					Let's have a chat
+				</h1>
+				<div class="awesome-background underline"></div>
+				<button type="button" class="btn btn-lg btn-black btn-big awesome-text" data-toggle="modal" data-target="#myModal">Click Here</button>
+			</div>
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog modal-lg ">
+					<div class="modal-content">
+						<div class="modal-footer">
+							<iframe height="600" allowtransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none;background: rgba(210,210,155, .65);"  src="https://adrw4.wufoo.com/embed/zda38vg1x2uxns/"><a href="https://adrw4.wufoo.com/forms/zda38vg1x2uxns/"></a></iframe><div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;"><span class="notranslate"></span></div>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<script src="js/jquery-3.2.1.min.js"></script>
 		<script async src="js/bootstrap.min.js"></script>
 <!------------------------------------------------------------------------------end of script-->

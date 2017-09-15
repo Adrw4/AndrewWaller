@@ -1,12 +1,7 @@
-* {
-	font-family: Product Sans;
-}
-
 body {
 	padding: 0;
 	margin: 0;
 	height: 100vh;
-	width:100%;
 }
 
 body,
@@ -15,12 +10,16 @@ html {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	min-height: 100%;
-	min-width: 100%;
+	height: 100%;
 	background-image:  url("../img/surf.jpg");
 	margin: 0px;
 	padding: 0px;
-	overflow-x: hidden;
+}
+
+h1,
+p,
+li {
+	font-family: Product Sans;
 }
 
 .text-box {
@@ -59,6 +58,7 @@ html {
 .row {
 	display: flex;
 	flex-wrap: wrap;
+	height: 100%;
 }
 
 .fa {
@@ -76,7 +76,7 @@ html {
 	height: 100%;
 	width: 100%;
 	opacity: 0;
-	transition: .5s ease;
+	transition: .1s ease;
 	background-color: midnightblue;
 }
 
@@ -121,40 +121,47 @@ html {
 }
 
 @-webkit-keyframes colorchange {
-	0% {color: rgb(255,187,120);}
-	10% {color: rgb(255,152,150);}
-	20% {color: rgb(197,176,213);}
-	30% {color: rgb(174,199,232);}
-	40% {color: rgb(152,223,138);}
-	50% {color: rgb(247,182,210);}
-	60% {color: rgb(219,219,141);}
-	70% {color: rgb(199,199,199);}
-	80% {color: rgb(196,156,148);}
-	90% {color: rgb(158,218,229);}
-	100% {color: rgb(247,182,210);}
+	0% {background-color: rgb(255,187,120);}
+	10% {background-color: rgb(255,152,150);}
+	20% {background-color: rgb(197,176,213);}
+	30% {background-color: rgb(174,199,232);}
+	40% {background-color: rgb(152,223,138);}
+	50% {background-color: rgb(247,182,210);}
+	60% {background-color: rgb(219,219,141);}
+	70% {background-color: rgb(199,199,199);}
+	80% {background-color: rgb(196,156,148);}
+	90% {background-color: rgb(158,218,229);}
+	100% {background-color: rgb(247,182,210);}
 }
 
 @keyframes colorchange {
-	0% {color: rgb(255,187,120);}
-	10% {color: rgb(255,152,150);}
-	20% {color: rgb(197,176,213);}
-	30% {color: rgb(174,199,232);}
-	40% {color: rgb(152,223,138);}
-	50% {color: rgb(247,182,210);}
-	60% {color: rgb(219,219,141);}
-	70% {color: rgb(199,199,199);}
-	80% {color: rgb(196,156,148);}
-	90% {color: rgb(158,218,229);}
-	100% {color: rgb(247,182,210);}
+	0% {background-color: rgb(255,187,120);}
+	10% {background-color:rgb(255,152,150);}
+	20% {background-color: rgb(197,176,213);}
+	30% {background-color: rgb(174,199,232);}
+	40% {background-color: rgb(152,223,138);}
+	50% {background-color: rgb(247,182,210);}
+	60% {background-color: rgb(219,219,141);}
+	70% {background-color: rgb(199,199,199);}
+	80% {background-color: rgb(196,156,148);}
+	90% {background-color: rgb(158,218,229);}
+	100% {background-color: rgb(247,182,210);}
 }
 
 /*==============================================================================RGB==*/
+
+.btn-lg-bottom {
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 100px 0px 100px 0px;
+}
 
 .btn-black {
 	background-color: black;
 	margin-top: 40px;
 	margin-bottom: 40px;
-	width: fit-content;
+	width: 100%;
 	margin: auto;
 }
 
@@ -168,8 +175,8 @@ html {
 
 /*==============================================================================.btn's==*/
 
-.hero {
-	height: 85%;
+.home {
+	height: 100%;
 }
 
 .hero-title {
@@ -178,11 +185,12 @@ html {
 	color: white;
 }
 
-.top-pushdown {
-	padding-top: 50px;
+.first-sect {
+	height: 100%;
 }
 
 .name {
+	margin-top: 100px;
 	margin-bottom: 0px;
 }
 
@@ -191,7 +199,7 @@ html {
 	width: 300px;
 	border: 1px solid black;
 	margin:0 auto;
-	margin-top: 10px;
+	margin-top: 5px;
 	font-size: 20px;
 	text-align: center;
 	background-color: black;
@@ -203,14 +211,26 @@ html {
 	padding-top: 50px;
 }
 
-/*==============================================================================hero section==*/
+/*==============================================================================home==*/
 
-.futer {
-	height: 25%;
+.name-2{
+	margin-bottom: 0px;
+}
+
+/*==============================================================================about-me==*/
+
+.my-work {
+	display:block;
+	overflow:auto;
+}
+
+.name-3{
+	margin-top: 50px;
+	margin-bottom: 0px;
 }
 
 .external-sites {
-	overflow: auto;
+	height: 40%;
 }
 
 .flex-parent {
@@ -249,7 +269,19 @@ html {
 	order: 4;
 }
 
-/*==============================================================================external sites==*/
+/*==============================================================================my-work==*/
+
+.about-me {
+	display:block;
+	overflow:auto;
+}
+
+/*===*/
+
+.contact {
+	display:block;
+	overflow:auto;
+}
 
 .contact-form {
 	width: 50%;
@@ -284,7 +316,7 @@ html {
     color: white;
 }
 
-/*==============================================================================contact page==*/
+/*==============================================================================contact==*/
 
 @media only screen and (min-width: 765px) {
 	.flex-child {
@@ -309,9 +341,6 @@ html {
 }
 
 @media only screen and (min-width: 1200px) {
-	body {
-		overflow: hidden;
-	}
 
 	.flex-child {
 		width: 25%;
