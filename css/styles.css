@@ -14,6 +14,7 @@ html {
 	background-image:  url("../img/surf.jpg");
 	margin: 0px;
 	padding: 0px;
+	overflow-x: hidden;
 }
 
 h1,
@@ -152,9 +153,9 @@ li {
 
 .btn-lg-bottom {
 	position: absolute;
-    bottom: 0;
-    left: 0;
-    border-radius: 100px 0px 100px 0px;
+  bottom: 0;
+  left: 0;
+  border-radius: 100px 0px 100px 0px;
 }
 
 .btn-black {
@@ -165,12 +166,8 @@ li {
 	margin: auto;
 }
 
-.btn-home {
-    height: 40px;
-    width: 75px;
-    background-color: black;
-    font-size: 25px;
-    padding: 4px;
+.btn-contact {
+	margin-bottom: 100px;
 }
 
 /*==============================================================================.btn's==*/
@@ -212,6 +209,11 @@ li {
 }
 
 /*==============================================================================home==*/
+
+.about-me {
+	display:block;
+	overflow:auto;
+}
 
 .name-2{
 	margin-bottom: 0px;
@@ -271,13 +273,6 @@ li {
 
 /*==============================================================================my-work==*/
 
-.about-me {
-	display:block;
-	overflow:auto;
-}
-
-/*===*/
-
 .contact {
 	display:block;
 	overflow:auto;
@@ -311,12 +306,21 @@ li {
 }
 
 .bio-2 {
-    margin: 20px 0px 20px 0px;
-    font-size: 30px;
-    color: white;
+  margin: 20px 0px 20px 0px;
+  font-size: 30px;
+  color: white;
 }
 
 /*==============================================================================contact==*/
+
+.social-media {
+  display: flex;
+  overflow: auto;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*==============================================================================social media==*/
 
 @media only screen and (min-width: 765px) {
 	.flex-child {
@@ -383,7 +387,7 @@ li {
 	    flex-direction: column;
 	    flex-wrap: wrap;
 	}
-	
+
 	.box-2 {
 		font-size: 50px;
 	}
