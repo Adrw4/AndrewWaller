@@ -318,6 +318,44 @@ li {
   overflow: auto;
   align-items: center;
   justify-content: space-around;
+	-webkit-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	flex-direction: row;
+}
+
+.fb {
+	background-image: url("../img/FB.png");
+  height: 19vh;
+	width: 19vw;
+	background-size:cover
+}
+
+.ig{
+	background-image: url("../img/IG.psd");
+	height: 19vh;
+	width: 19vw;
+	background-size:cover
+}
+
+.sc {
+	background-image: url("../img/SC.png");
+  height: 19vh;
+	width: 19vw;
+	background-size:cover
+}
+
+.gh {
+	background-image: url("../img/GH.png");
+	height: 19vh;
+	width: 19vw;
+	background-size:cover
+}
+
+.in {
+	background-image: url("../img/IN.png");
+	height: 19vh;
+	width: 19vw;
+	background-size:cover
 }
 
 /*==============================================================================social media==*/
