@@ -11,7 +11,7 @@ html {
 	background-position: center;
 	background-size: cover;
 	height: 100%;
-	background-image:  url("../img/surf.jpg");
+	background-image: url("../img/surf.jpg");
 	margin: 0px;
 	padding: 0px;
 	overflow-x: hidden;
@@ -323,39 +323,29 @@ li {
 	flex-direction: row;
 }
 
+.contact-logos{
+	max-width: 100%;
+	max-height: 100%;
+}
+
 .fb {
-	background-image: url("../img/FB.png");
-  height: 19vh;
 	width: 19vw;
-	background-size:cover
 }
 
 .ig{
-	background-image: url("../img/IG.psd");
-	height: 19vh;
 	width: 19vw;
-	background-size:cover
 }
 
 .sc {
-	background-image: url("../img/SC.png");
-  height: 19vh;
 	width: 19vw;
-	background-size:cover
 }
 
 .gh {
-	background-image: url("../img/GH.png");
-	height: 19vh;
 	width: 19vw;
-	background-size:cover
 }
 
 .in {
-	background-image: url("../img/IN.png");
-	height: 19vh;
 	width: 19vw;
-	background-size:cover
 }
 
 /*==============================================================================social media==*/
@@ -379,6 +369,9 @@ li {
     	height: 80px;
     	width: 140px;
     	font-size: 50px;
+	}
+	.btn-contact {
+		  width: 25vw;
 	}
 }
 
@@ -417,7 +410,7 @@ li {
 	}
 
 	.bio-2 {
-	    margin: 400px 0px 20px 0px;
+	    margin: 45vh 10px 0px 0px;
 	    font-size: 30px;
 	    color: white;
 	    align-items: center;
