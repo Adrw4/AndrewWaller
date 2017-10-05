@@ -18,6 +18,7 @@ html {
 }
 
 h1,
+h2,
 p,
 li {
 	font-family: Product Sans;
@@ -26,7 +27,6 @@ li {
 .text-box {
 	text-align: center;
 	color: white;
-	font-style: oblique;
 }
 
 .box {
@@ -82,6 +82,18 @@ li {
 }
 
 /*==============================================================================evrythang==*/
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url(''); /* IE9 Compat Modes */
+  src: url('') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/ProductSans-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/ProductSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/ProductSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/ProductSans-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/*==============================================================================fonts'==*/
 
 .awesome-text {
 	-webkit-animation:text-colorchange 20s infinite alternate;
@@ -171,6 +183,53 @@ li {
 }
 
 /*==============================================================================.btn's==*/
+
+#tooltip
+{
+    text-align: center;
+    color: #fff;
+    background: #111;
+    position: absolute;
+    z-index: 100;
+    padding: 15px;
+}
+
+    #tooltip:after /* triangle decoration */
+    {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #111;
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        margin-left: -10px;
+    }
+
+        #tooltip.top:after
+        {
+            border-top-color: transparent;
+            border-bottom: 10px solid #111;
+            top: -20px;
+            bottom: auto;
+        }
+
+        #tooltip.left:after
+        {
+            left: 10px;
+            margin: 0;
+        }
+
+        #tooltip.right:after
+        {
+            right: 10px;
+            left: auto;
+            margin: 0;
+        }
+
+/*==============================================================================.tooltip's==*/
 
 .home {
 	height: 100%;
@@ -328,23 +387,7 @@ li {
 	max-height: 100%;
 }
 
-.fb {
-	width: 19vw;
-}
-
-.ig{
-	width: 19vw;
-}
-
-.sc {
-	width: 19vw;
-}
-
-.gh {
-	width: 19vw;
-}
-
-.ln {
+.sm {
 	width: 19vw;
 }
 
@@ -420,7 +463,7 @@ li {
 	}
 
 	.box-2 {
-		font-size: 50px;
+		font-size: 40px;
 	}
 }
 
