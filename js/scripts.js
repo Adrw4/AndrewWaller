@@ -75,4 +75,4 @@ $( function()
     });
 });
 
-$( "#snap" ).tooltip({ content: '<img src="img/snapcode.svg" />' });
+$( "#snap" ).tooltip({ content: '<img id="snap" src="img/snapcode.svg" />' });
