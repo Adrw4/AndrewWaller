@@ -3,7 +3,7 @@ let pathToLoadImg = "../img/SC.png"; // path to load img
 
 function showLoad(){
     document.getElementById('Generate1').src = "../img/SC.png";
-    setTimeout(showCode, 1000);
+    setTimeout(showCode, 200);
 }
 
 function showCode(){
