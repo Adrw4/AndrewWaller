@@ -9,7 +9,6 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/styles.css" rel="stylesheet" type="text/css">
 		<link href="css/font-awesome.min.css" rel="stylesheet">
-
 	</head>
 <!------------------------------------------------------------------------------end of head-->
 	<body style="background-image:url(../img/surf.webp);">
@@ -119,8 +118,9 @@
 			<a href="https://www.instagram.com/adrw4/?hl=en" class="contact-logos" target="_blank">
 				<img src="img/IG.png" class="sm" alt=""/>
 			</a>
-			<a id="snap" rel="tooltip" title="" >
-				<img src="img/SC.png" class="sm"/>
+			<a id="snapParent">
+				<img src="img/SC.png" class="sm" id="Generate1" onClick="showLoad()" alt="">
+				<img style="display:none;" src="img/snapcode.svg">
 			</a>
 			<a href="https://github.com/AndrewWaller" class="contact-logos" target="_blank">
 				<img src="img/GH.png" class="sm" alt="">
@@ -129,10 +129,8 @@
 				<img src="img/LN.png" class="sm" alt="">
 			</a>
 		</section>
-		<script src="js/jquery-3.2.1.min.js"></script>
-		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-		<script src="js/scripts.js"></script>
-		<script async src="js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript" src="js/scripts.js"></script>
 <!------------------------------------------------------------------------------end of script-->
 	</body>
 </html>
