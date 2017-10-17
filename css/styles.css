@@ -292,6 +292,7 @@ li {
 
 .external-sites {
 	height: 40%;
+	overflow-y: hidden;
 }
 
 .flex-parent {
