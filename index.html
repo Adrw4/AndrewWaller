@@ -98,17 +98,26 @@
 					Let's have a chat
 				</h1>
 				<div class="awesome-background underline"></div>
-				<button type="button" class="btn btn-lg btn-black btn-contact awesome-text" data-toggle="modal" data-target="#myModal">Click Here</button>
+				<button class="btn btn-lg btn-black btn-contact awesome-text" id="myBtn">Click Here</button>
 			</div>
-			<div class="modal fade" id="myModal" role="dialog">
-				<div class="modal-dialog modal-lg ">
-					<div class="modal-content">
-						<div class="modal-footer">
-							<iframe height="600" allowtransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none;background: rgba(210,210,155, .65);"  src="https://adrw4.wufoo.com/embed/zda38vg1x2uxns/"><a href="https://adrw4.wufoo.com/forms/zda38vg1x2uxns/"></a></iframe><div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;"><span class="notranslate"></span></div>
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
+			<div id="myModal" class="modal">
+			  <div class="modal-content">
+				<span class="close">&times;</span>
+				<form onsubmit="submitForm()" action="http://awalldrew2@gmail.com" name="login" method="post">
+					<label for="email">E-mail</label>
+					<input type="text"  name="email" value="JohnDoe@gmail.com">
+					<br>
+					<label for="phoneNumber">Phone Number</label>
+					<input type="text" class="miniInput" name="phoneNumber" value="" maxlength="3">
+					-
+					<input type="text" class="miniInput" name="phoneNumber" value="" maxlength="3">
+					-
+					<input type="text" class="miniInput02" name="phoneNumber" value="" maxlength="4">
+					<br>
+					<input type="submit" value"send to me">
+				</form>
+				<!--<iframe height="600" allowtransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none;background: rgba(210,210,155, .65);"  src="https://adrw4.wufoo.com/embed/zda38vg1x2uxns/"><a href="https://adrw4.wufoo.com/forms/zda38vg1x2uxns/"></a></iframe><div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;"><span class="notranslate"></span></div>
+				--></div>
 			</div>
 		</section>
 		<section class="social-media">

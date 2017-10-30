@@ -1,22 +1,27 @@
 function snapchatPngFlip() {
-    document.getElementById("snapchatLogo").src = "../img/FB.png";
+    let snap = document.getElementById("snapchatLogo");
+    if (snap.src == "../img/SC.png") {
+        snap.src = "../img/snapcode.svg";
+    } else {
+        snap.src = "../img/SC.png";
+    }
 };
 
+// End of Snapchat Function
 
-
-
-
-
-
-
-
-/*let pathToGenerateImg = "../img/snapcode.svg"; // path to generate
-let pathToLoadImg = "../img/SC.png"; // path to load img
-
-function showLoad(){
-    document.getElementById('Generate1').src = "../img/SC.png";
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0]; 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
 
-function showCode(){
-    document.getElementById('Generate1').src = "../img/snapcode.svg";
-}*/
+// End of Modal================================
