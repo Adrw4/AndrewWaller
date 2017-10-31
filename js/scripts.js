@@ -1,13 +1,6 @@
-function snapchatPngFlip() {
-    let snap = document.getElementById("snapchatLogo");
-    if (snap.src == "../img/SC.png") {
-        snap.src = "../img/snapcode.svg";
-    } else {
-        snap.src = "../img/SC.png";
-    }
-};
 
-// End of Snapchat Function
+
+// End of button scroll 
 
 var modal = document.getElementById('myModal');
 var btn = document.getElementById("myBtn");
@@ -25,3 +18,17 @@ window.onclick = function(event) {
 }
 
 // End of Modal================================
+
+function timeout() {
+    setTimeout(snapchatPngFlip, '1000');
+}
+
+function snapchatPngFlip() {
+    let snap = document.getElementById("snapchatLogo");
+    snap.src = "img/snapcode.svg";
+};
+
+// End of Snapchat Function
+
+
+

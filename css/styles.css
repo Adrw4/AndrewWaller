@@ -28,6 +28,10 @@ label {
 	color: white;
 }
 
+input {
+	color: black;
+}
+
 .text-box {
 	text-align: center;
 	color: white;
@@ -343,10 +347,7 @@ label {
 }
 
 .contact-form {
-	width: 50%;
-	padding: 25px;
-	margin: 0 auto;
-	background: rgba(210,210,155, .65);
+	color: white;
 }
 
 .modal-footer {
@@ -384,6 +385,10 @@ label {
 .miniInput02 {
 	width: 35px;
 	height: 20px;
+}
+
+.input-for-name {
+	width: 30vw;
 }
 
 /*==============================================================================contact==*/
@@ -517,7 +522,7 @@ label {
 
 /* Modal Content */
 .modal-content {
-	background-color: rgba(225,225,225,.5);
+	background-color: rgba(225,225,225,.2);
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
